@@ -5,17 +5,21 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #F5F4F0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+ol>li {
   color: #1B1B1B;
 }
 
 h1 {
   font-size: 36px;
   font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -26,7 +30,6 @@ h2 {
 h3 {
   font-size: 28px;
   font-weight: bold;
-
 }
 
 p {
@@ -39,11 +42,80 @@ hr {
   border: 1px solid #d9d9d9;
 }
 
+footer {
+  text-align: center;
+  margin-bottom: 48px;
+  margin-top: 65px;
+  color: #333333;
+}
+
+ol>li {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+ul>li {
+  font-size: 16px;
+  list-style-type: disc;
+  margin-left: -14px;
+}
+
+ul>li::marker {
+  color: #333;
+}
+
+p+hr {
+  margin-bottom: 64px;
+}
+
+p+h2 {
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+h2+p {
+  margin-bottom: 64px;
+}
+
+ol+hr {
+  margin: 40px auto;
+}
+
+hr+p {
+  text-align: center;
+}
+
+h3 + p {
+  margin-left: -40px;
+}
+
+.blue {
+  color: #0c51a7;
+}
+
+.orange {
+  color: #e95e10;
+}
+
+.purple {
+  color: #591B98;
+}
+
+.pink {
+  color: #e5245e;
+}
+
+.headline+p {
+  margin-top: 64px;
+}
+
 .image-apresentation {
   max-width: 100%;
   max-height: 100%;
   height: 660px;
   object-fit: cover;
+  border-radius: 28px;
 }
 
 .card-image {
@@ -52,21 +124,27 @@ hr {
   width: 1120px;
   height: 350px;
   object-fit: cover;
+  border-radius: 28px;
+  margin-bottom: 20px;
+  margin-top: 48px;
 }
 
 #container {
   box-sizing: border-box;
   width: 1120px;
-  margin: 88px 80px 137px;
+  margin: 88px 80px 0px;
 }
 
 .headline {
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
   color: #e95e10;
 }
 
 .subtitle {
   font-size: 16px;
   font-style: italic;
+  margin: 24px auto 40px;
+  text-align: center;
 }
